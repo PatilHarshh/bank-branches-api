@@ -15,5 +15,10 @@ This project implements a REST API to get the Bank List and its branch details f
 
 In this approach, the data is stored in a CSV file named bank_branches.csv. The CSV file contains columns such as ifsc, bank_id, branch, address, city, district, state, and bank_name. The Node.js application reads this file, parses the data, and loads it into memory. The application then sets up REST API endpoints to serve the bank and branch information.
 
-### Overview
+### Overview ( Getting all bank details) 
+![Screenshot (281)](https://github.com/PatilHarshh/bank-branches-api/assets/120102234/45c0e808-7dfb-4b62-8626-9d3baea8f17f)
+
+### Overview ( Getting all bank details for specific branch ) 
+![Screenshot (282)](https://github.com/PatilHarshh/bank-branches-api/assets/120102234/5fae0d1a-bf63-4453-99cc-02dc50055e81)
+
 
