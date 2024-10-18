@@ -1,24 +1,69 @@
-# Bank Branches API
+# AI-Powered Code Snippet Generator
 
-This project implements a REST API to get the Bank List and its branch details for a specific branch. Two approaches have been taken to solve this problem:
+![Version](https://img.shields.io/badge/version-1.0.5-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-1. Using a CSV file to load data and serve it through REST API endpoints.
-2. Using MongoDB to store data and serve it through REST API endpoints.
+The **AI-Powered Code Snippet Generator** is a command-line tool that utilizes the Gemini API to generate code snippets based on natural language descriptions. Whether you need a JWT login implementation or any other code sample, this tool simplifies the process by transforming your requirements into actual code.
 
-## Prerequisites
+## Table of Contents
 
-- Node.js
-- npm or yarn
-- MongoDB (for approach 2)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Key](#api-key)
+- [Example](#example)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Approach 1: Using CSV File
+## Features
 
-In this approach, the data is stored in a CSV file named bank_branches.csv. The CSV file contains columns such as ifsc, bank_id, branch, address, city, district, state, and bank_name. The Node.js application reads this file, parses the data, and loads it into memory. The application then sets up REST API endpoints to serve the bank and branch information.
+- Generate code snippets in various programming languages based on natural language input.
+- Supports multiple programming languages such as JavaScript, Python, Java, and more.
+- Easy command-line interface with user-friendly prompts.
+- Securely stores your API key for seamless future use.
 
-### Overview ( Getting all bank details) 
-![Screenshot (281)](https://github.com/PatilHarshh/bank-branches-api/assets/120102234/45c0e808-7dfb-4b62-8626-9d3baea8f17f)
+## Installation
 
-### Overview ( Getting all bank details for specific branch ) 
-![Screenshot (282)](https://github.com/PatilHarshh/bank-branches-api/assets/120102234/5fae0d1a-bf63-4453-99cc-02dc50055e81)
+To install the package, run (install package Globally):
 
+```bash
+npm i aipowered-codegen -g
+```
+
+## Usage
+
+- Open any of your project.
+- Install the package once globally.
+- Enter your Google generative API from [Gemini Developers](https://aistudio.google.com/app/apikey)
+- Use command "codegen" for generating snippets.
+  
+## API Key
+
+You will be prompted to enter your Google Generative AI API key when you run the command for the first time. Ensure that you store it securely, as it is required for generating code snippets.
+
+
+## RUN ON TERMINAL OR BASH
+
+Run on terminal or on bash using following command
+```bash
+codegen
+```
+
+## Example
+
+```bash
+$ codegen
+Describe the code snippet you need (e.g., "JWT login"): JWT login
+Enter the programming language (e.g., JavaScript, Python): JavaScript
+Enter the file name to save the snippet (e.g., snippet.js): jwtLogin.js
+```
+This will generate a jwtLogin.js file containing the code snippet for JWT login in JavaScript.
+
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request. 🤝
+
+## License
+
+[MIT](LICENSE)
 
